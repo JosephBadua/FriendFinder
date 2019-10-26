@@ -25,16 +25,15 @@ app.get("/survey", function(req, res) {
     res.sendFile(routes.survey)
   });  
 app.get("/api/friends", function(req, res) {
-  return res.json(need)
+  return res.json(friends)
 });   
 
 app.post("/api/friends", function(req, res) {
   var newReservation = req.body;
-  newReservation.routeName = newReservation.customerName
-    .replace(/\s+/g, "")
-    .toLowerCase();
-     friends.push(newReservation);
-     res.json(friends);
+  console.log(newReservation);
+  friends.push(newReservation);
+  res.json(friends);
+  console.log(friends);
 });
 
 // Starts the server to begin listening

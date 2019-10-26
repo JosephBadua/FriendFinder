@@ -1,6 +1,6 @@
-var friends = [];
+var friends = []
   
 var api = JSON.stringify(friends);
 
-exports.api = friends
+exports.friends = friends
 exports.api = api
