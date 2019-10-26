@@ -21,7 +21,7 @@ $(document).ready(function(){
     
             // AJAX post the data to the friends API.
             $.post("/api/friends", userData).then(function(data) {
-                console.log("survey.html", data);
+              console.log(data.name)
                 alert("User added");
               });
 

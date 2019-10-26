@@ -14,7 +14,6 @@ app.use(express.json());
 
 var routes = require("./app/routing/htmlRoutes")
 var api = require("./app/routing/apiRoutes")
-var need = api.api;
 var friends = api.friends;
 
 // Routes
@@ -29,11 +28,10 @@ app.get("/api/friends", function(req, res) {
 });   
 
 app.post("/api/friends", function(req, res) {
-  var newReservation = req.body;
-  console.log(newReservation);
-  friends.push(newReservation);
+  var newFriend = req.body;
+  console.log(newFriend);
+  friends.push(newFriend);
   res.json(friends);
-  console.log(friends);
 });
 
 // Starts the server to begin listening
