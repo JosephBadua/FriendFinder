@@ -15,6 +15,7 @@ app.use(express.json());
 var routes = require("./app/routing/htmlRoutes")
 var api = require("./app/routing/apiRoutes")
 var need = api.api;
+var friends = api.friends;
 
 // Routes
 app.get("/", function(req, res) {
@@ -25,7 +26,17 @@ app.get("/survey", function(req, res) {
   });  
 app.get("/api/friends", function(req, res) {
   return res.json(need)
-});    
+});   
+
+app.post("/api/friends", function(req, res) {
+  var newReservation = req.body;
+  newReservation.routeName = newReservation.customerName
+    .replace(/\s+/g, "")
+    .toLowerCase();
+     friends.push(newReservation);
+     res.json(friends);
+});
+
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
