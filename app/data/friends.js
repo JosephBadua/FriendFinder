@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  
     $("#submit").on("click", function(event) {
         event.preventDefault();
             var userData = {
@@ -17,12 +18,14 @@ $(document).ready(function(){
                 $("#q10").val()
               ]
             };
-            alert(userData)
-    
+            var arrayOfStrings = (userData.scores);
+            var arrayofNumber = arrayOfStrings.map(Number);
+            const reducer = (accumulator, currentValue) => accumulator + currentValue;
+            console.log(arrayofNumber.reduce(reducer));
             // AJAX post the data to the friends API.
-            $.post("/api/friends", userData).then(function(data) {
-              console.log(data.name)
-                alert("User added");
+            $.post("/api/friends", userData).then(function() {
+              console.log("done");
+              console.log(userData);
               });
 
     });
