@@ -17,7 +17,7 @@ var friends = [
     },
     { 
     name: 'jos',
-    photo: 'jos',
+    photo: 'box',
     scores: [ 
     '4', 
     '3', 

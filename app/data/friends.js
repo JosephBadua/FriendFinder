@@ -1,6 +1,6 @@
-
 var names = [];
 var endScores = [];
+var picture = [];
 $(document).ready(function(){
     $("#submit").on("click", function(event) {
         event.preventDefault();
@@ -31,33 +31,36 @@ $(document).ready(function(){
              $.get("/api/friends").then(function(data) {
               let pastFriends = data
               for (let i = 0; i < pastFriends.length; i++){
-                names.push(pastFriends[i].name)
+                names.push(pastFriends[i].name);
+                picture.push(pastFriends[i].photo);
                 let scoreStrings = pastFriends[i].scores
-                console.log(scoreStrings)
                 let scoreNumbers = scoreStrings.map(Number);
                 let scoreValues = scoreNumbers.reduce(reducer);
-                console.log(scoreValues);
                 endScores.push(scoreValues);
               }
               endScores.splice(-1,1);
               console.log(endScores);
               console.log(names);
-              console.log((closest(endScores,finalValue)));
+              var close = (closest(endScores,finalValue));
+              var closeArray = endScores.indexOf(close);
+              var finalName = names[closeArray];
+              console.log(finalName);
+              var finalPhoto = picture[closeArray];
+              console.log(finalPhoto);
               });
-              function closest(array,num){
-                  var i=0;
-                  var minDiff=1000;
-                  var ans;
-                  for(i in array){
-                      var m=Math.abs(num-array[i]);
-                      if(m<minDiff){ 
-                              minDiff=m; 
-                              ans=array[i]; 
-                          }
-                    }
-                  return ans;
-              }
-              console.log((closest(endScores,finalValue)));
-
     });
 });
+
+function closest(array,num){
+  var i=0;
+  var minDiff=1000;
+  var ans;
+  for(i in array){
+      var m=Math.abs(num-array[i]);
+      if(m<minDiff){ 
+              minDiff=m; 
+              ans=array[i]; 
+          }
+    }
+  return ans;
+}
