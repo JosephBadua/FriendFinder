@@ -1,33 +1,33 @@
 var friends = [ 
     { 
-    name: 'j',
-    photo: 'j',
+    name: 'Clark Kent',
+    photo: 'https://upload.wikimedia.org/wikipedia/en/3/3a/Superman_and_Clark_Kent.jpg',
     scores: [ 
-    '1', 
-    '1', 
-    '1', 
-    '1', 
+    '4', 
+    '4', 
+    '4', 
+    '2', 
+    '2', 
     '5', 
-    '1', 
-    '1', 
-    '1', 
-    '1', 
-    '1' 
+    '5', 
+    '4', 
+    '3', 
+    '2' 
         ] 
     },
     { 
-    name: 'jos',
-    photo: 'box',
+    name: 'Ronald McDonald',
+    photo: 'https://vignette.wikia.nocookie.net/ronaldmcdonald/images/0/0a/Original2.jpg/revision/latest?cb=20180909053442',
     scores: [ 
     '4', 
-    '3', 
+    '4', 
     '2', 
-    '4', 
+    '2', 
+    '5', 
     '5', 
     '1', 
-    '5', 
-    '4', 
     '1', 
+    '2', 
     '2' 
         ] 
     }

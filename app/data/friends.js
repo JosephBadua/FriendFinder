@@ -27,6 +27,7 @@ $(document).ready(function(){
             console.log("End score is " + finalValue)
             // AJAX post the data to the friends API.
             $.post("/api/friends", userData).then(function() {
+              console.log("success")
               });
              $.get("/api/friends").then(function(data) {
               let pastFriends = data
@@ -47,6 +48,12 @@ $(document).ready(function(){
               console.log(finalName);
               var finalPhoto = picture[closeArray];
               console.log(finalPhoto);
+              $("#match-name").text(finalName);
+              $("#match-img").attr("src", finalPhoto);
+              $(".modal").modal("toggle");
+              names = []
+              endScores = []
+              picture = []
               });
     });
 });
