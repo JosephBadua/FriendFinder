@@ -17,12 +17,8 @@ var api = require("./app/routing/apiRoutes")
 var friends = api.friends;
 
 // Routes
-app.get("/", function(req, res) {
-  res.sendFile(routes.home)
-});   
-app.get("/survey", function(req, res) {
-    res.sendFile(routes.survey)
-  });  
+require("./app/routing/htmlRoutes.js")(app);
+
 app.get("/api/friends", function(req, res) {
   return res.json(friends)
 });   
