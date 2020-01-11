@@ -44,4 +44,4 @@ To use our web service, simply go to our homepage and take our state-of-the-art 
 
 ##Screenshot
 
-[!FriendFinderSurvey](https://i.imgur.com/izpbjvk.png)
+![FriendFinderSurvey](https://i.imgur.com/izpbjvk.png)
