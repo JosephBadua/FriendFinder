@@ -41,3 +41,7 @@ To use our web service, simply go to our homepage and take our state-of-the-art 
 	scores: [5, 1, 2, 3, 1, 2, 5, 1, 1, 1]
 }
 ```
+
+##Screenshot
+
+[!FriendFinderSurvey](https://i.imgur.com/izpbjvk.png)
