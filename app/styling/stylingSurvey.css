@@ -1,0 +1,12 @@
+body {
+    background:  powderblue!important;
+    font-family: 'Kelly Slab', cursive;
+
+}
+
+.surveyContainer {
+    background: lightcoral;
+    width: 80%;
+    margin: auto;
+    padding: 2em;
+}

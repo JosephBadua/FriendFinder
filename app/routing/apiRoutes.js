@@ -16,24 +16,8 @@ var friends = [
         ] 
     },
     { 
-    name: 'Ronald McDonald',
-    photo: 'https://vignette.wikia.nocookie.net/ronaldmcdonald/images/0/0a/Original2.jpg/revision/latest?cb=20180909053442',
-    scores: [ 
-    '4', 
-    '4', 
-    '2', 
-    '2', 
-    '5', 
-    '5', 
-    '1', 
-    '1', 
-    '2', 
-    '2' 
-        ] 
-    },
-    { 
     name: 'Batman',
-    photo: 'https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png',
+    photo: 'https://img.cinemablend.com/filter:scale/quill/e/5/c/2/4/9/e5c2494b7fec13181defbc8afe66a7a3bee5bae0.jpg?fw=1200',
     scores: [ 
     '1', 
     '1', 
@@ -49,7 +33,7 @@ var friends = [
     },
     { 
     name: 'Sauron',
-    photo: 'https://vignette.wikia.nocookie.net/middleearthshadowofmordor7723/images/6/64/SauronTheBrightLordMissionImage.jpg/revision/latest/scale-to-width-down/1000?cb=20180326151346',
+    photo: 'https://i.ytimg.com/vi/0CI68v_JKBc/maxresdefault.jpg',
     scores: [ 
     '3', 
     '3', 
