@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    height: 100vh;
+    transition: all 0.2s;
+    animation: color-change-4x 6s linear infinite alternate both;
+}
+.customContainer {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+}
+.customJumbo {
+    padding: 2em;
+    border: 2px solid black;
+}
+
+.friendTitle {
+    font-size: 6em !important;
+    font-family: 'Kelly Slab', cursive;
+}
+
+.friendText {
+    font-size: 4em !important;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.bottomText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em !important;
+}
+
+@keyframes color-change-4x {
+    0% {
+      background: #19dcea;
+    }
+    33.3333% {
+      background: #b22cff;
+    }
+    66.666% {
+      background: #ea2222;
+    }
+    100% {
+      background: #f5be10;
+    }
+  }
+  
