@@ -29,6 +29,16 @@ body {
 .bottomText {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3em !important;
+    color: white !important;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color:  white !important;
+}
+
+a:hover {
+  color: cadetblue !important;
 }
 
 @keyframes color-change-4x {
