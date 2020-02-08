@@ -1,7 +1,7 @@
 # FriendFinder
 
 ## Live Link
- - https://enigmatic-castle-18667.herokuapp.com/
+https://friend-finder-app-joseph.herokuapp.com/
 
 ## Usage
 
