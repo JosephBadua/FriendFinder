@@ -1,8 +1,7 @@
 # FriendFinder
 
 ## Live Link
-https://friend-finder-app-joseph.herokuapp.com/
-
+[Friend_Finder_Page](https://friend-finder-app-joseph.herokuapp.com/)
 ## Usage
 
 To use our web service, simply go to our homepage and take our state-of-the-art survey. Immediately after submitting the survey, your perfect best friend will pop up. We also have an API you can access to the network's users and their personalized information. For research purposes.
@@ -42,6 +41,15 @@ To use our web service, simply go to our homepage and take our state-of-the-art 
 }
 ```
 
-##Screenshot
+## Overview of Pages
 
-![FriendFinderSurvey](https://i.imgur.com/izpbjvk.png)
+  Friend Finder Home Page           |  Friend Finder Survey | 
+:-------------------------:|:-------------------------: |
+![FriendHome](https://i.imgur.com/l5IGMCj.png)  |  ![SurveyPage](https://i.imgur.com/N7sVVxx.png)  
+
+#### Joseph Badua
+<ul style="font-size: 20px;">
+  <li><a href="https://github.com/JosephBadua">Github</a></li>
+  <li><a href="https://www.linkedin.com/in/joseph-badua-60aaa7188/">LinkedIn</a></li>
+  <li><a href="http://www.josephbadua.com/">Portfolio</a></li>
+</ul>
