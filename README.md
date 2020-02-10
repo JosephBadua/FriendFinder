@@ -47,6 +47,8 @@ To use our web service, simply go to our homepage and take our state-of-the-art 
 :-------------------------:|:-------------------------: |
 ![FriendHome](https://i.imgur.com/l5IGMCj.png)  |  ![SurveyPage](https://i.imgur.com/N7sVVxx.png)  
 
+### Project Creator and Maintainer
+
 #### Joseph Badua
 <ul style="font-size: 20px;">
   <li><a href="https://github.com/JosephBadua">Github</a></li>
